@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',arial;
+}
+ion-content{
+    --ion-background-color: #0F4CDA;
+}
+ion-col{
+    height: 100vh;
+}
+.menu-list{
+
+    background: #17367D;
+}
+.sidemenu-bar ion-col{
+    --ion-color-success: #17367D;
+}
+.sidemenu-bar{
+    background: #17367D;
+    border: 1px solid #0F4CDA;
+    position: sticky;
+    width: 100%;
+}
+
+.sidemenu-bar ul li{
+    list-style: none;
+    text-align: center;
+    margin-top: 2.59rem;
+    
+}
+// .sidemenu-bar ion-item{
+//     margin-top: 3.62rem;
+//     --ion-item-background: #17367D;
+//     text-align: start;
+//     margin-left: -0.8rem;
+//     --border-color: #0F4CDA;
+    
+//     ion-label{
+//         font-family: 'Poppins', arial;
+//         color: #fff;
+//         margin-top: 0.5rem;
+//         margin-left: 0.3rem;
+//     }
+    
+// }
+.sidemenu-bar ion-icon{
+    color: #fff;
+    font-size: 2rem;
+}
+.title-pic{
+    display: block;
+    position: sticky;
+}
+.title-pic img{
+    display: block;
+    margin-top: 9rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+    width: 40%;
+}
+.title-pic h1{
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.title-pic p{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: -0.4rem;
+    color: #9F9F9F;
+}
+.socmed{
+    margin-left: 2rem;
+    margin-right: 4rem;
+    margin-top: 2rem;
+}
+.socmed ion-icon{
+    margin-left: 4rem;
+    font-size: 2.5rem;
+    color: #fff;
+    // border-radius: 100%;
+    // background-color: #0F4CDA;
+}
+ion-button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    width: 30%;
+    background-color: #0F4CDA;
+    color: #fff;
+    border-radius: 10px;
+}
+.name-title{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.name-title h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 3.5rem;
+    margin-top: 17rem;
+}
+.name-title p{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #9F9F9F;
+}
+.desktop-site{
+    text-align: end;
+}
+.desktop-site ion-chip{
+    color: #fff;
+    text-align: end;
+    margin-top: 3rem;
+    background-color: #17367D;
+}
+ion-chip ion-icon{
+    color: #fff;
+}

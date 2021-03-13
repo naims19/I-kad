@@ -1,0 +1,40 @@
+*{
+    font-family: 'Poppins', arial;
+}
+ion-content{
+    --ion-background-color: #0F4CDA;
+}
+.title-pic{
+    display: block;
+}
+.title-pic img{
+    display: block;
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+    width: 40%;
+}
+.title-pic h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.title-pic p{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: -0.7rem;
+    color: #9F9F9F;
+}
+.desktop-site{
+    text-align: end;
+}
+.desktop-site ion-chip{
+    color: #fff;
+    text-align: end;
+    margin-top: 3rem;
+    background-color: #17367D;
+}
+ion-chip ion-icon{
+    color: #fff;
+}

@@ -1,0 +1,57 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      I Kad
+    </ion-title>
+    <ion-buttons slot="start">
+        <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-app>
+  <ion-content>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    
+
+    <div class="text-title">
+      <h1>Contact</h1>
+    </div>
+    <div class="contact">
+      <div class="contact-body">
+        <div class="contact-desc">
+          <ion-icon name="location-outline"></ion-icon>
+          <h1>Kajang, Selangor</h1>
+        </div>
+      </div>
+      <div class="contact-body">
+        <div class="contact-desc">
+          <ion-icon name="call-outline"></ion-icon>
+          <h1>013 223 6754</h1>
+        </div>
+      </div>
+      <div class="contact-body">
+        <div class="contact-desc">
+          <ion-icon name="mail-outline"></ion-icon>
+          <h1>john@email.com</h1>
+        </div>
+      </div>
+      <div class="map">
+        <img src="assets/media/map.jpg">
+      </div>
+    </div>
+    <div class="text-title">
+      <h1>How Can <span class="title-color">We Help You ?</span></h1>
+    </div>
+    <div class="form">
+      <div class="contact-form">
+        <ion-input type="text" placeholder="Name"></ion-input>
+        <ion-input type="text" placeholder="Email Address"></ion-input>
+        <ion-input type="text" placeholder="Subject"></ion-input>
+        <ion-textarea placeholder="Message"></ion-textarea>
+        <ion-button fill="clear">
+          Submit
+        </ion-button>
+      </div>
+    </div>
+  </ion-content>  
+</ion-app>

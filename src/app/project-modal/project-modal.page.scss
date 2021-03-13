@@ -1,0 +1,47 @@
+*{
+    font-family: 'Poppins', arial;
+}
+ion-content{
+    --ion-background-color:  #17367D;
+}
+ion-toolbar ion-icon{
+    font-size: 2rem;
+    color: #fff;
+}
+.text-title h1{
+    margin-left: 1.5rem;
+    margin-top: 4rem;
+    font-size: 1.85rem;
+    font-weight: 600;
+}
+.project1 img{
+    margin-top: 1.8rem;
+}
+.project-desc{
+    background-color: #0F4CDA;
+    margin-left: 1.5rem;
+    width: 70%;
+}
+.project-desc h1{
+    padding-top: 1rem;
+    font-size: 1.35rem;
+    margin-left: 1.5rem;
+}
+.project-desc ion-icon{
+    margin-right: 0.5rem;
+    font-size: 1.3rem;
+}
+.project-desc p{
+    margin-left: 1.5rem;
+    font-size: 1.2rem;
+}
+.project-desc label{
+    margin-top: -1rem;
+    margin-left: 1.5rem;
+    background-color: #17367D;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.share ion-icon{
+    font-size: 2rem;
+}

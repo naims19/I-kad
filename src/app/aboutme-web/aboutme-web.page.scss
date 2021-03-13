@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',arial;
+}
+ion-content{
+    --ion-background-color: #0F4CDA;
+}
+ion-col{
+    position: sticky;
+}
+.menu-list{
+
+    background: #17367D;
+}
+.sidemenu-bar ion-col{
+    --ion-color-success: #17367D;
+}
+.sidemenu-bar{
+    background: #17367D;
+    border: 1px solid #0F4CDA;
+    position: fixed;
+    border: 1px solid #0F4CDA;
+    // width: 100%;
+}
+.sidemenu-bar ul li{
+    list-style: none;
+    text-align: center;
+    margin-top: 2.59rem;
+    
+}
+// .sidemenu-bar ion-item{
+//     margin-top: 3.62rem;
+//     --ion-item-background: #17367D;
+//     text-align: start;
+//     margin-left: -0.8rem;
+//     --border-color: #0F4CDA;
+    
+//     ion-label{
+//         font-family: 'Poppins', arial;
+//         color: #fff;
+//         margin-top: 0.5rem;
+//         margin-left: 0.3rem;
+//     }
+    
+// }
+.sidemenu-bar ion-icon{
+    color: #fff;
+    font-size: 2rem;
+}
+.title-pic{
+    display: block;
+    position: fixed;
+    
+}
+.title-pic img{
+    // display: block;
+    margin-top: 9rem;
+    margin-left: 7.8rem;
+    border-radius: 100%;
+    width: 25%;
+}
+.title-pic h1{
+    margin-top: 0.5rem;
+    // text-align: center;
+    margin-left: 7.6rem;
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+.title-pic p{
+    // text-align: center;
+    margin-left: 8.7rem;
+    font-size: 1.4rem;
+    margin-top: -0.4rem;
+    color: #9F9F9F;
+}
+.socmed{
+    margin-left: 2rem;
+    margin-right: 4rem;
+    margin-top: 2rem;
+}
+.socmed ion-icon{
+    margin-left: 4rem;
+    font-size: 2.5rem;
+    color: #fff;
+    // border-radius: 100%;
+    // background-color: #0F4CDA;
+}
+ion-button{
+    // display: block;
+    margin-left: 9.5rem;
+    margin-right: auto;
+    margin-top: 1rem;
+    width: 17%;
+    background-color: #0F4CDA;
+    color: #fff;
+    border-radius: 10px;
+}
+.about{
+    margin-left: 1.5rem;
+}
+.about-title{
+    margin-top: 3rem;
+}
+.about-title h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    span{
+        color: #17367D;
+    }
+}
+.about-title p{
+    font-size: 1.1rem;
+    margin-top: 3rem;
+}
+.about-info{
+    margin-top: 9rem;
+    margin-left: 1.5rem;
+}
+.about-info p{
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+
+    span{
+        color: #17367D;
+    }
+}
+.doing{
+    margin-top: 3rem;
+    margin-left: 1.5rem;
+}
+.doing h1{
+    font-size: 2rem;
+    font-weight: 600;
+    span{
+        color: #17367D;
+    }
+}
+.doing-desc{
+    margin-left: 1.5rem;
+    margin-top: 3rem;
+}
+.desc1 ion-icon{
+    font-size: 2rem;
+}
+.desc-title{
+    font-size: 1.1rem;
+}
+.desc-word{
+    font-size: 1rem;
+}
+.doing-desc2{
+    margin-left: 1.5rem;
+    margin-top: 8rem;
+}
+.desc2 ion-icon{
+    font-size: 2rem;
+}

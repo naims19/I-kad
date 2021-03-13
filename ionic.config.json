@@ -1,0 +1,7 @@
+{
+  "name": "i kad",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

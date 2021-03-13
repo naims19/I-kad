@@ -1,0 +1,86 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      I Kad
+    </ion-title>
+    <ion-buttons slot="start">
+        <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-app>
+  <ion-content>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+
+    <div class="text-title">
+      <h1>Pakej</h1>
+    </div>
+    <div class="pakej1">
+      <div class="pakej-title">
+        <h2 class="test">Web Design</h2>
+        <h1>RM 150</h1>
+        <p>Per Design</p>
+        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+      </div>
+    </div>
+    <div class="pakej2">
+      <div class="pakej-title">
+        <h2 class="test">E-Commerce</h2>
+        <h1>RM 200</h1>
+        <p>Per Design</p>
+        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+      </div>
+    </div>
+    <div class="testimoni">
+      <div class="testimoni-title">
+        <h1>Testimoni</h1>
+      </div>
+      <!-- testimoni -->
+      <div class="testimoni-desc">
+        <img src="assets/media/elon-musk.jpg">
+          <div class="testimoni1">
+            <div class="testimoni1-desc">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+            <div class="testimoni1-name">
+              <p class="name">Bruce</p>
+              <p class="cust-title">Customer</p>
+            </div>
+          </div>
+      </div>
+      <div class="testimoni-btn">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </div>
+    </div>
+    <div class="client">
+      <div class="client-title">
+        <h1>Clients</h1>
+      </div>
+      <div class="client-desc">
+        <div class="client-btn">
+        <ion-slides [options]="option">
+          <ion-slide>
+            <ion-card>
+              <img src="assets/media/Tesla_logo.png" alt="" srcset="">
+            </ion-card>
+          </ion-slide>
+          <ion-slide>
+            <ion-card>
+              <img src="assets/media/car_logo.png" alt="" srcset="">
+            </ion-card>
+          </ion-slide>
+          <ion-slide>
+            <ion-card>
+              <img src="assets/media/bmw_logo.png" alt="" srcset="">
+            </ion-card>
+          </ion-slide>
+        </ion-slides>
+      </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-app>
+
+

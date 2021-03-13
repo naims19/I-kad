@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      I Kad
+    </ion-title>
+    <ion-icon slot="end" name="close-outline" (click)="dismiss()"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+<ion-app>
+  <ion-content>
+    <div class="text-title">
+      <h1>Portfolio Project 1</h1>
+    </div>
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col size="6">
+          <div class="project1">
+            <img src="assets/media/tesla.jpg">
+          </div>
+        </ion-col>
+        <ion-col size="6">
+          <div class="project-desc">
+            <h1>Description</h1>
+            <p><ion-icon slot="start" name="person"></ion-icon> John Doe</p>
+            <p><ion-icon slot="start" name="globe"></ion-icon> www.tesla.com</p>
+            <p><ion-icon slot="start" name="calendar"></ion-icon> 1 March 2020</p>
+            <p>Lorem ipsum dolor sit amet, consectetur.</p>
+            <p>Technology</p>
+            <label>HTML</label><label>CSS</label><label>JQUERY</label><label>AJAX</label>
+            <div class="share">
+              <p>Share <ion-icon slot="end" name="logo-facebook"></ion-icon><ion-icon slot="end" name="logo-instagram"></ion-icon>
+                <ion-icon slot="end" name="logo-twitter"></ion-icon></p>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+      
+      
+    
+  </ion-content>
+</ion-app>

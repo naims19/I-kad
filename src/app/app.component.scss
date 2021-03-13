@@ -1,0 +1,25 @@
+*{
+    font-family: 'Poppins', arial;
+}
+
+ion-menu{
+    --ion-background-color: #17367D;
+}
+.menu-list{
+    margin-top: 3rem;
+    background: #17367D;
+}
+ion-item{
+    margin-top: 1rem;
+    --ion-color-success: #17367D;
+
+    ion-label{
+        font-size: 1.35rem;
+        color: #fff;
+        font-family: 'Poppins';
+    }
+    ion-icon{
+        color: #fff;
+    }
+}
+

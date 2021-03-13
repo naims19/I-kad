@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      I Kad
+    </ion-title>
+    <ion-buttons slot="start">
+        <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-app>
+  <ion-content>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+
+    <div class="text-title">
+      <h1>Portfolio</h1>
+    </div>
+    <div class="text-desc">
+      <span class="text-project">All</span>
+      <span class="text-project">Project 1</span>
+      <span class="text-project">Project 2</span>
+    </div>
+    <div class="project1" >
+      <img src="assets/media/tesla.jpg" (click)="showModal()">
+      <h1>Project 1</h1>
+    </div>
+    <div class="project2" routerLink="#">
+      <img src="assets/media/amazon.jpg" alt="" srcset="">
+      <h1>Project 2</h1>
+    </div>
+  </ion-content>
+</ion-app>
