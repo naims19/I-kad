@@ -1,0 +1,77 @@
+<ion-content>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="9"></ion-col>
+      <ion-col size="3" style="background: #808B96;">
+        <div class="edit-page">
+          <div class="edit-title">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+              <span><ion-button expand="block" fill="clear" shape="round" (click)="save()"> 
+                Save
+              </ion-button></span>
+            <nav>
+              <ul>
+                <b><li routerLink="/admin-page">Page</li></b>
+                <li routerLink="/admin-profile">Profile</li>
+                <li routerLink="/admin-color">Color</li>
+                <li routerLink="/admin-sociak">Social</li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="edit-pages">
+            <!-- reorder btn -->
+            <ion-buttons slot="end">
+              <span><ion-button expand="block" fill="solid" (click)="toggleReorder()">Reorder</ion-button></span>
+            </ion-buttons>
+          <!-- jadi -->
+          <ion-list lines="none">
+            <ion-reorder-group  (ionItemReorder)="onRenderItems($event)" disabled="false">
+              <!-- <ion-item *ngFor="let item of items"> -->
+                <ion-item>
+                <!-- <ion-label>{{item}}</ion-label> -->
+                <ion-label>Home</ion-label>
+                <ion-toggle></ion-toggle>
+                <ion-reorder *ngIf="reorder"></ion-reorder>
+              </ion-item>
+
+              <ion-item>
+                <ion-label routerLink="/abooutme-setup">About Me</ion-label>
+                <ion-toggle></ion-toggle>
+                <ion-reorder *ngIf="reorder"></ion-reorder>
+              </ion-item>
+
+              <ion-item>
+                <ion-label routerLink="/resume-setup">Resume</ion-label>
+                <ion-toggle></ion-toggle>
+                <ion-reorder *ngIf="reorder"></ion-reorder>
+              </ion-item>
+
+              <ion-item>
+                <ion-label routerLink="/portfolio-setup">Portfolio</ion-label>
+                <ion-toggle></ion-toggle>
+                <ion-reorder *ngIf="reorder"></ion-reorder>
+              </ion-item>
+
+              <ion-item>
+                <ion-label routerLink="/pakej-setup">Pakej</ion-label>
+                <ion-toggle></ion-toggle>
+                <ion-reorder *ngIf="reorder"></ion-reorder>
+              </ion-item>
+
+              <ion-item>
+                <ion-label routerLink="/contact-setup">Contact</ion-label>
+                <ion-toggle></ion-toggle>
+                <ion-reorder *ngIf="reorder"></ion-reorder>
+              </ion-item>
+            </ion-reorder-group>
+          </ion-list>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+

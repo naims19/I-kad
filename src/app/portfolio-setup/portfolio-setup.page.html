@@ -1,0 +1,76 @@
+<ion-content>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="9"></ion-col>
+      <ion-col size="3" style="background: #808B96;">
+        <div class="edit-page">
+          <div class="edit-title">
+            <ion-icon name="chevron-back-outline" routerLink="/admin-page"></ion-icon>
+              <span><ion-button expand="block" fill="clear" shape="round"> 
+                Save
+              </ion-button></span>
+            <nav>
+              <ul>
+                <li>Portfolio Page Setup</li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="edit-pages">
+            <p>Portfolio</p>
+            <ion-item lines="none">
+              <ion-label>Portfolio 1</ion-label>
+              <ion-toggle></ion-toggle>
+            </ion-item>
+
+            <p class="portfolio">Add Portfolio</p>
+            <ion-input type="text" placeholder="Name Portfolio"></ion-input>
+            <p>Picture</p>
+            <div class="portfolio" *ngFor="let item of MySelect1">
+              <ion-input type="file" placeholder="Location"></ion-input>
+            </div>
+            
+            <ion-button expand="block" fill="clear" shape="round" (click)="addBtn(1);">
+              Add Picture
+            </ion-button>
+            <p class="portfolio">Add Technology (Optional)</p>
+
+            <div class="technology"  *ngFor="let item of MySelect2">
+              <ion-input type="text" placeholder="Technology"></ion-input>
+            </div>
+            <ion-button expand="block" fill="clear" shape="round" (click)="addBtn1(1);">
+              Add Technology
+            </ion-button>
+
+            <div class="share">
+              <p>Share</p>
+              <ion-item lines="none">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+                <ion-toggle></ion-toggle>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-toggle></ion-toggle>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-toggle></ion-toggle>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <ion-toggle></ion-toggle>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-icon name="mail"></ion-icon>
+                <ion-toggle></ion-toggle>
+              </ion-item>
+            </div>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+

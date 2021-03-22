@@ -1,0 +1,82 @@
+*{
+    font-family: 'Poppins', arial;
+    padding: 0;
+    margin: 0;
+}
+ion-content{
+    --ion-background-color: #fff;
+}
+h1{
+    color: black;
+}
+.edit-page{
+    height: 100%;
+}
+.edit-title ion-icon{
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    border-radius: 100%;
+    border: 2px solid #ABB2B9;
+}
+.edit-title span{
+    float: right;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+.edit-title ion-button{
+    width: 100%;
+    background-color: #808B96;
+    color: #fff;
+    border-radius: 10px;
+    border: 2px solid #ABB2B9;
+    transition: 0.3s;
+}
+.edit-title ion-button:hover{
+    background-color: #fff;
+    color: #808B96;
+}
+nav ul{
+    list-style: none;
+    margin-left: 0.5rem;
+    display: flex;
+    justify-content: right;
+}
+nav ul li{
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+}
+.edit-pages{
+    background: #ABB2B9;
+    height: 100vh;
+}
+.edit-pages p{
+    padding-top: 1rem;
+    margin-left: 0.5rem;
+}
+.edit-pages ion-input{
+    margin-top: 0.5rem;
+    width: 95%;
+    background-color: #fff;
+    border: 2px solid #808B96;
+    margin-left: 0.5rem;
+    color: #808B96;
+    border-radius: 10px;
+    font-family: 'Poppins', arial;
+}
+.edit-pages ion-button{
+    background: #fff;
+    width: 95%;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    background-color: #ABB2B9;
+    border: 2px solid #808B96;
+    color: #fff;
+    transition: 0.3s;
+}
+.edit-pages ion-button:hover{
+    background-color: #808B96;
+    color: #fff;
+}

@@ -1,0 +1,103 @@
+*{
+    font-family: 'Poppins', arial;
+    padding: 0;
+    margin: 0;
+}
+ion-content{
+    --ion-background-color: #fff;
+}
+h1{
+    color: black;
+}
+.edit-page{
+    height: 100%;
+}
+.edit-title ion-icon{
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    border-radius: 100%;
+    border: 2px solid #ABB2B9;
+}
+.edit-title span{
+    float: right;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+.edit-title ion-button{
+    width: 100%;
+    background-color: #808B96;
+    color: #fff;
+    border-radius: 10px;
+    border: 2px solid #ABB2B9;
+    transition: 0.3s;
+}
+.edit-title ion-button:hover{
+    background-color: #fff;
+    color: #808B96;
+}
+nav ul{
+    list-style: none;
+    margin-left: 0.5rem;
+    display: flex;
+    justify-content: right;
+}
+nav ul li{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.edit-pages{
+    background: #ABB2B9;
+    height: 100vh;
+}
+.edit-pages p{
+    padding-top: 1rem;
+    margin-left: 0.5rem;
+}
+.edit-pages ion-button{
+    margin-top: 1rem;
+    border-radius: 100%;
+    width: 10%;
+    height: 30px;
+    margin-left: 1.2rem;
+}
+.red{
+    background-color: #E92727;
+}
+.blue{
+    background-color: #0F4CDA;
+}
+.orange{
+    background-color: #E97F27;
+}
+.yellow{
+    background-color: #ECE50F;
+}
+.green{
+    background-color: #1C9518;
+}
+.purple{
+    background-color: #4A1895;
+}
+.white{
+    background-color: #fff;
+}
+.sec-red{
+    background-color: #BC0808;
+}
+.sec-blue{
+    background-color: #17367D;
+}
+.sec-orange{
+    background-color: #D05F07;
+}
+.black{
+    background-color: #000;
+}
+.sec-green{
+    background-color: #0FD009;
+}
+.turqoise{
+    background-color: turquoise;
+}

@@ -1,0 +1,57 @@
+<ion-content>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="9"></ion-col>
+      <ion-col size="3" style="background: #808B96;">
+        <div class="edit-page">
+          <div class="edit-title">
+            <ion-icon name="chevron-back-outline" routerLink="/admin-page"></ion-icon>
+              <span><ion-button expand="block" fill="clear" shape="round"> 
+                Save
+              </ion-button></span>
+            <nav>
+              <ul>
+                <li>Resume Page Setup</li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="edit-pages">
+            <p>Education :</p>
+            <div class="education" *ngFor="let item of MySelect1">
+              <ion-input type="text" placeholder="year"></ion-input>
+              <ion-input type="text" placeholder="Location"></ion-input>
+              <ion-input type="text" placeholder="Course Title"></ion-input>
+            </div>
+            <ion-button expand="block" fill="clear" shape="round" (click)="addBtn(1);">
+              Add Education
+            </ion-button>
+            
+            <p>Experience :</p>
+            <div class="experience" *ngFor="let item of MySelect2">
+              <ion-input type="text" placeholder="year"></ion-input>
+              <ion-input type="text" placeholder="Location"></ion-input>
+              <ion-input type="text" placeholder="Job Title"></ion-input>
+            </div>
+            <ion-button expand="block" fill="clear" shape="round" (click)="addBtn1(1);">
+              Add Experience
+            </ion-button>
+
+            <p>Skills :</p>
+            <div class="skills" *ngFor="let item of MySelect3">
+              <ion-input type="text" placeholder="Head Title"></ion-input>
+              <ion-input type="text" placeholder="Title"></ion-input>
+              <ion-input type="text" placeholder="Percentage"></ion-input>
+            </div>
+            <ion-button expand="block" fill="clear" shape="round" (click)="addBtn2(1);">
+              Add Skills
+            </ion-button>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+

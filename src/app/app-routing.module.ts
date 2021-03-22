@@ -49,6 +49,46 @@ const routes: Routes = [
   {
     path: 'contact-web',
     loadChildren: () => import('./contact-web/contact-web.module').then( m => m.ContactWebPageModule)
+  },
+  {
+    path: 'admin-page',
+    loadChildren: () => import('./admin-page/admin-page.module').then( m => m.AdminPagePageModule)
+  },
+  {
+    path: 'admin-profile',
+    loadChildren: () => import('./admin-profile/admin-profile.module').then( m => m.AdminProfilePageModule)
+  },
+  {
+    path: 'admin-color',
+    loadChildren: () => import('./admin-color/admin-color.module').then( m => m.AdminColorPageModule)
+  },
+  {
+    path: 'admin-social',
+    loadChildren: () => import('./admin-social/admin-social.module').then( m => m.AdminSocialPageModule)
+  },
+  {
+    path: 'abooutme-setup',
+    loadChildren: () => import('./abooutme-setup/abooutme-setup.module').then( m => m.AbooutmeSetupPageModule)
+  },
+  {
+    path: 'resume-setup',
+    loadChildren: () => import('./resume-setup/resume-setup.module').then( m => m.ResumeSetupPageModule)
+  },
+  {
+    path: 'portfolio-setup',
+    loadChildren: () => import('./portfolio-setup/portfolio-setup.module').then( m => m.PortfolioSetupPageModule)
+  },
+  {
+    path: 'pakej-setup',
+    loadChildren: () => import('./pakej-setup/pakej-setup.module').then( m => m.PakejSetupPageModule)
+  },
+  {
+    path: 'pakejpage-setup',
+    loadChildren: () => import('./pakejpage-setup/pakejpage-setup.module').then( m => m.PakejpageSetupPageModule)
+  },
+  {
+    path: 'contact-setup',
+    loadChildren: () => import('./contact-setup/contact-setup.module').then( m => m.ContactSetupPageModule)
   }
 ];
 @NgModule({
