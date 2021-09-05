@@ -1,0 +1,75 @@
+*{
+    font-family: 'Poppins', arial;
+}
+ion-content{
+    // --ion-background-color: #F9F9F9;
+    --background: linear-gradient(180deg,  rgba(225,232,250,1) 4%, rgba(154,161,213,1) 96%);
+}
+
+.logo-img{
+    margin-top: 4rem;
+    img{
+        width: 25%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h3{
+        color: #003399;
+        text-align: center;
+        font-weight: 600;
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+}
+.register-form{
+    margin-top: 2rem;
+    ion-item{
+        --background: none;
+        background-color: #D8E3E7;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+        margin-top: 0.5rem;
+        background-color: #D8E3E7;
+        border: 3px solid #003399;
+        border-radius: 5px;
+
+        ion-input{
+            color: #003399;
+            width: 100%;
+        }
+        ion-icon{
+            color: #003399;
+            margin-right: 1.5rem;
+        }
+    }
+    
+    ion-button{
+        margin-top: 1.5rem;
+        --background: none;
+        background-color: #D8E3E7;
+        color: #003399;
+        border: 3px solid #003399;
+        border-radius: 15px;
+        height: 45px;
+        font-weight: 600;
+        font-size: 1rem;
+        width: 85%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    p{
+        text-align: center;
+        color: #003399;
+        font-weight: 600;
+        
+        ion-icon{
+            color: #003399;
+            font-weight: 600;
+            display: inline-flex;
+        }
+    }
+}

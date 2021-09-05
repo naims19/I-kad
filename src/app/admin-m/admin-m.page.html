@@ -1,0 +1,69 @@
+<ion-header class="ion-no-border" mode="ios">
+  <ion-toolbar>
+    <ion-icon name="caret-back-outline" slot="start" style="margin-left: 0.5rem;" routerLink="/dashboard"></ion-icon>
+    <ion-title>iKad</ion-title>
+    <ion-icon name="save" slot="end" style="margin-right: 0.5rem;"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+
+  <div class="edit-bar">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Edit Bar</ion-card-title>
+        <ion-card-subtitle *ngIf="divCard2" (click)="openDiv1()"><ion-icon name="chevron-down-outline"></ion-icon></ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content *ngIf="divCard1">
+        <div class="navigation">
+          <ion-label style="font-weight: 600;">Page</ion-label>
+          <ion-label routerLink="/admin-profile-m">Profile</ion-label>
+          <ion-label routerLink="/admin-color-m">Appearance</ion-label>
+          <ion-label routerLink="/admin-social-m">Social</ion-label>
+        </div>
+        <div class="edit">
+          <ion-item lines="none">
+            <ion-label>Home</ion-label>
+          </ion-item>
+          <ion-item lines="none" routerLink="/about-setup-m">
+            <ion-label>About Me</ion-label>
+          </ion-item>
+          <ion-item lines="none" routerLink="/resume-setup-m">
+            <ion-label>Resume</ion-label>
+          </ion-item>
+          <ion-item lines="none" routerLink="/portfolio-setup-m">
+            <ion-label>Portfolio</ion-label>
+          </ion-item>
+          <ion-item lines="none" routerLink="/pakej-setup-m">
+            <ion-label>Pakej</ion-label>
+          </ion-item>
+          <ion-item lines="none" routerLink="/contact-setup-m">
+            <ion-label>Contact</ion-label>
+          </ion-item>
+        </div>
+        <ion-card-subtitle (click)="openDiv2()"><ion-icon name="chevron-up-outline"></ion-icon></ion-card-subtitle>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <!-- <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="schedule">
+        <ion-icon name="copy"></ion-icon>
+        <ion-label>Page</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="speakers">
+        <ion-icon name="person-circle"></ion-icon>
+        <ion-label>Profile</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="map">
+        <ion-icon name="map"></ion-icon>
+        <ion-label>Appearance</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="about">
+        <ion-icon name="share-social"></ion-icon>
+        <ion-label>Social</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs> -->
+</ion-content>

@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+<ion-header class="ion-no-border" mode="ios">
   <ion-toolbar>
     <ion-title>
       I Kad
@@ -9,18 +9,25 @@
   </ion-toolbar>
 </ion-header>
 <ion-app>
-
   <ion-content>
-    <div class="desktop-site">
+
+    <!-- <div class="desktop-site">
       <ion-chip mode="ios" routerLink="/homeweb">
         <ion-icon name="desktop"></ion-icon>
         <ion-label>Desktop Site</ion-label>
       </ion-chip>
-    </div>
-    <div class="title-pic">
-      <img src="assets/media/gambar.jpg" alt="" srcset="">
-      <h1>John Doe</h1>
-      <p>Sales Person</p>
-    </div>
+    </div> -->
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div class="title-pic">
+            <img src="assets/media/gambar.jpg" alt="" srcset="">
+            <h1>John Doe</h1>
+            <p>Sales Person</p>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </ion-content>
 </ion-app>

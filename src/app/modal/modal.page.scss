@@ -2,48 +2,57 @@
     font-family: 'Poppins', arial;
 }
 ion-content{
-    --ion-background-color:  #17367D;
+    --ion-background-color: #003399;
 }
-ion-toolbar ion-icon{
-    font-size: 2rem;
-    color: #fff;
+ion-header{
+    ion-toolbar{
+        --background: none;
+        background-color: #003399;
+
+        ion-icon{
+            font-size: 2rem;
+            color: #fff;
+        }
+    }
 }
-.text-title h1{
-    margin-left: 1.5rem;
-    margin-top: 4rem;
-    font-size: 1.85rem;
-    font-weight: 600;
-}
-.project1 img{
-    margin-left: 1.5rem;
-    margin-top: 3rem;
-    width: 55%;
-}
-.project-desc{
-    background-color: #0F4CDA;
-    margin-left: 1.5rem;
-    width: 70%;
-}
-.project-desc h1{
-    padding-top: 1rem;
-    font-size: 1.35rem;
-    margin-left: 1.5rem;
-}
-.project-desc ion-icon{
-    margin-right: 0.5rem;
-    font-size: 1.3rem;
-}
-.project-desc p{
-    margin-left: 1.5rem;
-    font-size: 1.2rem;
-}
-.project-desc label{
-    margin-top: -1rem;
-    margin-left: 1.5rem;
-    background-color: #17367D;
-    font-size: 1rem;
-    border-radius: 5px;
-}
-.share ion-icon{
-    font-size: 2rem;
+.project{
+    margin-top: 3.5rem;
+    ion-card{
+        background-color: #F9F9F9;
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        ion-card-header{
+            ion-card-title{
+                color: #003399;
+                font-weight: 600;
+                font-size: 1.5rem;
+            }
+        }
+        ion-card-content{
+            ion-item{
+                --background: none;
+                background-color: #F9F9F9;
+
+                ion-icon{
+                    color: #787A91;
+                }
+                ion-label{
+                    font-family: 'Poppins';
+                    color: #17367D;
+                    font-weight: 600;
+                }
+            }
+            p{
+                margin-top: 1rem;
+                color: #17367D;
+                font-size: 1.2rem;
+            }
+            .share{
+                margin-top: 1rem;
+            }
+        }
+    }
 }

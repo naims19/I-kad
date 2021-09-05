@@ -3,72 +3,68 @@
 
   <ion-grid>
     <ion-row>
-      <ion-col size="9"></ion-col>
-      <ion-col size="3" style="background: #808B96;">
-        <div class="edit-page">
-          <div class="edit-title">
-            <ion-icon name="chevron-back-outline"></ion-icon>
-              <span><ion-button expand="block" fill="clear" shape="round"> 
-                Save
-              </ion-button></span>
-            <nav>
-              <ul>
-                <li routerLink="/admin-page">Page</li>
-                <li routerLink="/admin-profile">Profile</li>
-                <li routerLink="/admin-color">Color</li>
-                <b><li routerLink="/admin-social">Social</li></b>
-              </ul>
-            </nav>
-          </div>
-
-          <div class="edit-pages">
-           <p>Social Network</p>
-            <ion-item lines="none"> 
-              <ion-icon name="logo-whatsapp"></ion-icon>
-              <ion-input type="text" placeholder="Phone Number"></ion-input>
-              <ion-toggle></ion-toggle>
-            </ion-item>
-            <!-- Twitter -->
-            <ion-item lines="none"> 
-              <ion-icon name="logo-twitter"></ion-icon>
-              <ion-input type="text" placeholder="Profile URL"></ion-input>
-              <ion-toggle></ion-toggle>
-            </ion-item>
-            <!-- facebook -->
-            <ion-item lines="none"> 
-              <ion-icon name="logo-facebook"></ion-icon>
-              <ion-input type="text" placeholder="Profile URL"></ion-input>
-              <ion-toggle></ion-toggle>
-            </ion-item>
-            <!-- Instagram -->
-            <ion-item lines="none"> 
-              <ion-icon name="logo-instagram"></ion-icon>
-              <ion-input type="text" placeholder="Profile URL"></ion-input>
-              <ion-toggle></ion-toggle>
-            </ion-item>
-            <!-- Linkedin -->
-            <ion-item lines="none"> 
-              <ion-icon name="logo-linkedin"></ion-icon>
-              <ion-input type="text" placeholder="Profile URL"></ion-input>
-              <ion-toggle></ion-toggle>
-            </ion-item>
-            <p>Other</p>
-            <!-- Call -->
-            <ion-item lines="none"> 
-              <ion-icon name="call"></ion-icon>
-              <ion-input type="text" placeholder="Phone Number"></ion-input>
-              <ion-toggle></ion-toggle>
-            </ion-item>
-            <!-- Mail -->
-            <ion-item lines="none"> 
-              <ion-icon name="mail"></ion-icon>
-              <ion-input type="text" placeholder="Phone Number"></ion-input>
-              <ion-toggle></ion-toggle>
-            </ion-item>
-          </div>
+      <ion-col size="3"  style="background: #003399; height: 100vh;">
+        <div class="save-btn">
+          <ion-item lines="none">
+            <ion-icon name="chevron-back-outline" slot="start"></ion-icon>
+            <ion-button expand="block" fill="clear" slot="end"> 
+              Save
+            </ion-button>
+          </ion-item>
         </div>
+        <div class="navigation">
+            <ion-label routerLink="/admin-page">Page</ion-label>
+            <ion-label routerLink="/admin-profile">Profile</ion-label>
+            <ion-label routerLink="/admin-color">Appearance</ion-label>
+            <ion-label style="font-weight: 600;" routerLink="/admin-social">Social</ion-label>
+        </div>
+        <div class="edit">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-subtitle>Social Network</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-item lines="none"> 
+                <ion-icon name="logo-whatsapp"></ion-icon>
+                <ion-input type="text" placeholder="Phone Number"></ion-input>
+              </ion-item>
+              <ion-item lines="none"> 
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-input type="text" placeholder="Profile Url"></ion-input>
+              </ion-item>
+              <ion-item lines="none"> 
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-input type="text" placeholder="Profile Url"></ion-input>
+              </ion-item>
+              <ion-item lines="none"> 
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-input type="text" placeholder="Profile Url"></ion-input>
+              </ion-item>
+              <ion-item lines="none"> 
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <ion-input type="text" placeholder="Profile Url"></ion-input>
+              </ion-item>
+            </ion-card-content>
+          </ion-card>
+          <ion-card>
+            <ion-card-header>
+              <ion-card-subtitle>Other</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-item lines="none"> 
+                <ion-icon name="call"></ion-icon>
+                <ion-input type="text" placeholder="Phone Number"></ion-input>
+              </ion-item>
+              <ion-item lines="none"> 
+                <ion-icon name="mail"></ion-icon>
+                <ion-input type="text" placeholder="Profile Url"></ion-input>
+              </ion-item>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </ion-col>
+      <ion-col size="9"> 
       </ion-col>
     </ion-row>
   </ion-grid>
 </ion-content>
-

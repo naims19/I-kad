@@ -1,0 +1,130 @@
+*{
+    font-family: 'Poppins', arial;
+}
+ion-header{
+    ion-toolbar{
+        --background: none;
+        background-color: #003399;
+        ion-title{
+            letter-spacing: 1px;
+        }
+        ion-icon{
+            font-size: 1.5rem;
+        }
+    }
+}
+ion-content{
+    --ion-background-color: #F9F9F9;
+
+    .edit-bar{
+        ion-card{
+            width: 97%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            --background: none;
+            background-color: #003399;
+
+            ion-card-subtitle{
+                text-align: center;
+                font-size: 1.3rem;
+                color: #F9F9F9;
+                margin-top: 0.5rem;
+            }
+
+            ion-card-header{
+                ion-card-title{
+                    font-size: 1rem;
+                    letter-spacing: 1px;
+                    text-align: center;
+                    color: #F9F9F9;
+                }
+                ion-card-subtitle{
+                    text-align: center;
+                    font-size: 1.3rem;
+                    color: #F9F9F9;
+                }
+            }
+            ion-card-content{
+                .navigation{
+                    display: flex;
+                    justify-content: center;
+                    ion-label{
+                        margin-right: 1rem;
+                        margin-left: 1rem;
+                        color: #F9F9F9;
+                    }
+                }
+
+                ion-card-title{
+                    font-size: 1rem;
+                    letter-spacing: 1px;
+                    text-align: center;
+                    color: #F9F9F9;
+                    margin-top: 1rem;
+                }
+
+                ion-item{
+                    margin-top: 0.5rem;
+                    --background: none;
+                    background-color: #F9F9F9;
+                    border-radius: 5px;
+
+                    ion-label{
+                        color: #003399;
+                        text-align: center;
+                        font-family: 'Poppins';
+                        font-weight: 600;
+                    }
+
+                    ion-button{
+                        border-radius: 100%;
+                        width: 8%;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+.red{
+    background-color: #E92727;
+}
+.blue{
+    background-color: #0F4CDA;
+}
+.orange{
+    background-color: #E97F27;
+}
+.yellow{
+    background-color: #ECE50F;
+}
+.green{
+    background-color: #1C9518;
+}
+.purple{
+    background-color: #4A1895;
+}
+.white{
+    background-color: #fff;
+}
+.sec-red{
+    background-color: #BC0808;
+}
+.sec-blue{
+    background-color: #17367D;
+}
+.sec-orange{
+    background-color: #D05F07;
+}
+.black{
+    background-color: #000;
+}
+.sec-green{
+    background-color: #0FD009;
+}
+.turqoise{
+    background-color: turquoise;
+}

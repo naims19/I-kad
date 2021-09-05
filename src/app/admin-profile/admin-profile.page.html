@@ -3,35 +3,43 @@
 
   <ion-grid>
     <ion-row>
-      <ion-col size="9"></ion-col>
-      <ion-col size="3" style="background: #808B96;">
-        <div class="edit-page">
-          <div class="edit-title">
-            <ion-icon name="chevron-back-outline"></ion-icon>
-              <span><ion-button expand="block" fill="clear" shape="round"> 
-                Save
-              </ion-button></span>
-            <nav>
-              <ul>
-                <li routerLink="/admin-page">Page</li>
-                <b><li routerLink="/admin-profile">Profile</li></b>
-                <li routerLink="/admin-color">Color</li>
-                <li routerLink="/admin-social">Social</li>
-              </ul>
-            </nav>
-          </div>
-
-          <div class="edit-pages">
-            <p>Name :</p>
-            <ion-input type="text"></ion-input>
-            <p>Job Title :</p>
-            <ion-input type="text"></ion-input>
-            <p>Profile Picture :</p>
-            <ion-input type="file"></ion-input>
-            <p>Upload Your Cv :</p>
-            <ion-input type="file"></ion-input>
-          </div>
+      <ion-col size="3" style="background: #003399; height: 100vh;">
+        <div class="save-btn">
+          <ion-item lines="none">
+            <ion-icon name="chevron-back-outline" slot="start"></ion-icon>
+            <ion-button expand="block" fill="clear" slot="end"> 
+              Save
+            </ion-button>
+          </ion-item>
         </div>
+        <div class="navigation">
+            <ion-label routerLink="/admin-page">Page</ion-label>
+            <ion-label style="font-weight: 600;" routerLink="/admin-profile">Profile</ion-label>
+            <ion-label routerLink="/admin-color">Appearance</ion-label>
+            <ion-label routerLink="/admin-social">Social</ion-label>
+        </div>
+        <div class="edit">
+          <ion-item lines="none">
+            <ion-icon slot="start" name="person"></ion-icon>
+            <ion-input type="text" placeholder="Name"></ion-input>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-icon slot="start" name="briefcase"></ion-icon>
+            <ion-input type="text" placeholder="Job Title"></ion-input>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-icon slot="start" name="person"></ion-icon>
+            <ion-input type="file" value="Profile Picture"></ion-input>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-icon slot="start" name="document"></ion-icon>
+            <ion-input type="file" placeholder="Cv"></ion-input>
+          </ion-item>
+            
+        </div>
+
+      </ion-col>
+      <ion-col size="9">
       </ion-col>
     </ion-row>
   </ion-grid>

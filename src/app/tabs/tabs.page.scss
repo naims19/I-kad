@@ -1,7 +1,34 @@
 ion-tabs{
-    --ion-background-color: #17367D;
+    background-color: #F9F9F9;
     font-family: 'Poppins', arial;
 }
+ion-tab-bar{
+    --background: none;
+    background-color: #003399;
+    bottom: 5px;
+    position: relative;
+    border-radius: 16px;
+    width: 92%;
+    margin: 0 auto;
+    border: none;
+}
+ion-tab-button {
+    --color: #fff;
+    --color-selected: #fff;
+  
+    &::before {
+      background-color: transparent;
+      display: block;
+      content: "";
+      margin: 0 auto;
+      width: 20px;
+      height: 2px;
+    }
+  
+    &.tab-selected::before {
+      background-color: #fff;
+    }
+  }
 ion-icon, ion-label{
     color:#fff;
 }

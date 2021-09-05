@@ -1,10 +1,20 @@
-ion-toolbar{
+*{
     font-family: 'Poppins', arial;
 }
-
 ion-content{
-    --ion-background-color: #0F4CDA;
-    font-family: 'Poppins', arial;
+    --ion-background-color: #F9F9F9;
+}
+ion-header{
+    ion-toolbar{
+        --background: none;
+        background-color: #003399;
+
+        ion-menu-buttons{
+            ion-menu-button{
+                color: #fff;
+            }
+        }
+    }
 }
 ion-fab{
     margin-right: 0.5rem;
@@ -14,18 +24,20 @@ ion-progress-bar{
     width: 87.5%;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
-    background: #0F4CDA;
+    background: #003399;
     border: 4px solid #17367D;
     border-radius: 15px;
 }
 ion-label{
     margin-left: 2rem;
+    color: #003399;
 }
 .text-title h1{
     margin-left: 1.5rem;
     margin-top: 4rem;
     font-size: 1.85rem;
     font-weight: 600;
+    color: #003399;
 }
 .text-desc h1{
     margin-top: 3rem;
@@ -33,14 +45,17 @@ ion-label{
     margin-right: 1.5rem;
     font-size: 1.35rem;
     font-weight: 600;
+    color: #003399;
 }
 .desc-title{
     font-size: 1.2rem;
     font-weight: 600;
+    color: #003399;
 }
 .desc-word, .desc-word2{
     margin-top: -0.8rem;
     font-size: 1.1rem;
+    color: #003399;
 }
 .text-desc2 h1{
     margin-top: 3rem;
@@ -48,10 +63,12 @@ ion-label{
     margin-right: 1.5rem;
     font-size: 1.35rem;
     font-weight: 600;
+    color: #003399;
 }
 .desc-word3{
     margin-top: -0.8rem;
     font-size: 1.1rem;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+    color: #003399;
 }

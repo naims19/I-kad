@@ -89,6 +89,58 @@ const routes: Routes = [
   {
     path: 'contact-setup',
     loadChildren: () => import('./contact-setup/contact-setup.module').then( m => m.ContactSetupPageModule)
+  },
+  {
+    path: 'signup',
+    loadChildren: () => import('./signup/signup.module').then( m => m.SignupPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'register',
+    loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
+  },
+  {
+    path: 'dashboard',
+    loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
+  },
+  {
+    path: 'admin-m',
+    loadChildren: () => import('./admin-m/admin-m.module').then( m => m.AdminMPageModule)
+  },
+  {
+    path: 'admin-profile-m',
+    loadChildren: () => import('./admin-profile-m/admin-profile-m.module').then( m => m.AdminProfileMPageModule)
+  },
+  {
+    path: 'admin-color-m',
+    loadChildren: () => import('./admin-color-m/admin-color-m.module').then( m => m.AdminColorMPageModule)
+  },
+  {
+    path: 'admin-social-m',
+    loadChildren: () => import('./admin-social-m/admin-social-m.module').then( m => m.AdminSocialMPageModule)
+  },
+  {
+    path: 'about-setup-m',
+    loadChildren: () => import('./about-setup-m/about-setup-m.module').then( m => m.AboutSetupMPageModule)
+  },
+  {
+    path: 'resume-setup-m',
+    loadChildren: () => import('./resume-setup-m/resume-setup-m.module').then( m => m.ResumeSetupMPageModule)
+  },
+  {
+    path: 'portfolio-setup-m',
+    loadChildren: () => import('./portfolio-setup-m/portfolio-setup-m.module').then( m => m.PortfolioSetupMPageModule)
+  },
+  {
+    path: 'pakej-setup-m',
+    loadChildren: () => import('./pakej-setup-m/pakej-setup-m.module').then( m => m.PakejSetupMPageModule)
+  },
+  {
+    path: 'contact-setup-m',
+    loadChildren: () => import('./contact-setup-m/contact-setup-m.module').then( m => m.ContactSetupMPageModule)
   }
 ];
 @NgModule({

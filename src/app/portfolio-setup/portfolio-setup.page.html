@@ -3,74 +3,113 @@
 
   <ion-grid>
     <ion-row>
-      <ion-col size="9"></ion-col>
-      <ion-col size="3" style="background: #808B96;">
-        <div class="edit-page">
-          <div class="edit-title">
-            <ion-icon name="chevron-back-outline" routerLink="/admin-page"></ion-icon>
-              <span><ion-button expand="block" fill="clear" shape="round"> 
-                Save
-              </ion-button></span>
-            <nav>
-              <ul>
-                <li>Portfolio Page Setup</li>
-              </ul>
-            </nav>
-          </div>
-
-          <div class="edit-pages">
-            <p>Portfolio</p>
-            <ion-item lines="none">
-              <ion-label>Portfolio 1</ion-label>
-              <ion-toggle></ion-toggle>
-            </ion-item>
-
-            <p class="portfolio">Add Portfolio</p>
-            <ion-input type="text" placeholder="Name Portfolio"></ion-input>
-            <p>Picture</p>
-            <div class="portfolio" *ngFor="let item of MySelect1">
-              <ion-input type="file" placeholder="Location"></ion-input>
-            </div>
-            
-            <ion-button expand="block" fill="clear" shape="round" (click)="addBtn(1);">
-              Add Picture
+      <ion-col size="3" style="background: #003399; height: 100%;">
+        <div class="save-btn">
+          <ion-item lines="none">
+            <ion-icon name="chevron-back-outline" slot="start" routerLink="/admin-page"></ion-icon>
+            <ion-button expand="block" fill="clear" slot="end"> 
+              Save
             </ion-button>
-            <p class="portfolio">Add Technology (Optional)</p>
-
-            <div class="technology"  *ngFor="let item of MySelect2">
-              <ion-input type="text" placeholder="Technology"></ion-input>
-            </div>
-            <ion-button expand="block" fill="clear" shape="round" (click)="addBtn1(1);">
-              Add Technology
-            </ion-button>
-
-            <div class="share">
-              <p>Share</p>
-              <ion-item lines="none">
-                <ion-icon name="logo-whatsapp"></ion-icon>
-                <ion-toggle></ion-toggle>
-              </ion-item>
-              <ion-item lines="none">
-                <ion-icon name="logo-facebook"></ion-icon>
-                <ion-toggle></ion-toggle>
-              </ion-item>
-              <ion-item lines="none">
-                <ion-icon name="logo-instagram"></ion-icon>
-                <ion-toggle></ion-toggle>
-              </ion-item>
-              <ion-item lines="none">
-                <ion-icon name="logo-linkedin"></ion-icon>
-                <ion-toggle></ion-toggle>
-              </ion-item>
-              <ion-item lines="none">
-                <ion-icon name="mail"></ion-icon>
-                <ion-toggle></ion-toggle>
-              </ion-item>
-            </div>
-          </div>
+          </ion-item>
         </div>
+
+        <div class="edit">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Portfolio Page Setup</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-card-subtitle>Your Portfolio</ion-card-subtitle>
+              <ion-item lines="none">
+                <ion-label>Portfolio 1</ion-label>
+                <ion-icon name="create" slot="end" style="color: #003399;"></ion-icon>
+                <ion-icon name="trash" slot="end" color="danger"></ion-icon>
+                <ion-toggle></ion-toggle>
+              </ion-item>
+
+              <ion-card-subtitle>Add Portfolio</ion-card-subtitle>
+              <ion-input type="text" placeholder="Name Portfolio"></ion-input>
+              <ion-input type="file" placeholder="Location"></ion-input>
+
+              <div class="portfolio" *ngFor="let item of MySelect1" style="margin-top: 1.5rem;">
+                <ion-input type="text" placeholder="Name Portfolio"></ion-input>
+                <ion-input type="file" placeholder="Location"></ion-input>
+              </div>
+              <ion-button expand="block" fill="clear" shape="round" (click)="addBtn(1);">
+                Add Portfolio
+              </ion-button>
+
+
+              <ion-card-subtitle style="margin-top: 2rem;">Add Social</ion-card-subtitle>
+              <ion-item lines="none">
+                <ion-icon name="logo-whatsapp" style="color: #003399;"></ion-icon>
+                <ion-toggle name="blueberry" slot="end"></ion-toggle>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-icon name="logo-instagram" style="color: #003399;"></ion-icon>
+                <ion-toggle name="blueberry" slot="end"></ion-toggle>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-icon name="logo-linkedin" style="color: #003399;"></ion-icon>
+                <ion-toggle name="blueberry" slot="end"></ion-toggle>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-icon name="mail" style="color: #003399;"></ion-icon>
+                <ion-toggle name="blueberry" slot="end"></ion-toggle>
+              </ion-item>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </ion-col>
+      <ion-col size="9">
       </ion-col>
     </ion-row>
   </ion-grid>
 </ion-content>
 
+<!-- <div class="edit-page">
+
+
+  <div class="edit-pages">
+    <p>Portfolio</p>
+    <ion-item lines="none">
+      <ion-label>Portfolio 1</ion-label>
+      <ion-toggle></ion-toggle>
+    </ion-item>
+
+    <p class="portfolio">Add Portfolio</p>
+    <ion-input type="text" placeholder="Name Portfolio"></ion-input>
+    <p>Picture</p>
+    
+    <p class="portfolio">Add Technology (Optional)</p>
+
+    <div class="technology"  *ngFor="let item of MySelect2">
+      <ion-input type="text" placeholder="Technology"></ion-input>
+    </div>
+    <ion-button expand="block" fill="clear" shape="round" (click)="addBtn1(1);">
+      Add Technology
+    </ion-button>
+
+    <div class="share">
+      <p>Share</p>
+      <ion-item lines="none">
+        
+      </ion-item>
+      <ion-item lines="none">
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-toggle></ion-toggle>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-toggle></ion-toggle>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-icon name="logo-linkedin"></ion-icon>
+        <ion-toggle></ion-toggle>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-icon name="mail"></ion-icon>
+        <ion-toggle></ion-toggle>
+      </ion-item>
+    </div>
+  </div> -->

@@ -1,76 +1,60 @@
 *{
     font-family: 'Poppins', arial;
+}
+ion-content{
+    --ion-background-color: #F9F9F9;
+}
+ion-grid{
     padding: 0;
     margin: 0;
 }
-ion-content{
-    --ion-background-color: #fff;
+.save-btn{
+    ion-item{
+        --background: none;
+        ion-icon{
+            color: #003399;
+            border-radius: 100%;
+            background-color: #fff;
+            width: 8%;
+        }
+        ion-button{
+            background-color: #fff;
+            border-radius: 15px;
+            color: #003399;
+            width: 5rem;
+            font-weight: 600;
+        }
+    }
 }
-h1{
-    color: black;
-}
-.edit-page{
-    height: 100%;
-}
-.edit-title ion-icon{
-    font-size: 2rem;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    border-radius: 100%;
-    border: 2px solid #ABB2B9;
-}
-.edit-title span{
-    float: right;
-    margin-top: 1rem;
-    margin-right: 1rem;
-}
-.edit-title ion-button{
-    width: 100%;
-    background-color: #808B96;
-    color: #fff;
-    border-radius: 10px;
-    border: 2px solid #ABB2B9;
-    transition: 0.3s;
-}
-.edit-title ion-button:hover{
-    background-color: #fff;
-    color: #808B96;
-}
-nav ul{
-    list-style: none;
-    margin-left: 0.5rem;
+.navigation{
     display: flex;
-    justify-content: right;
+    justify-content: center;
+    ion-label{
+        margin-right: 1rem;
+        margin-left: 1rem;
+        font-size: 0.9rem;
+    }   
 }
-nav ul li{
-    margin-top: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-.edit-pages{
-    background: #ABB2B9;
-    height: 100vh;
-}
-.edit-pages p {
-    padding-top: 1rem;
-    margin-left: 0.5rem;
-}
-.edit-pages ion-item{
-    --ion-item-background: #ABB2B9;
-    margin-top: 1rem;
-    ion-icon{
-        margin-right: 0.5rem;
-        color: #fff;
-    }
-    ion-input{
-        width: 10%;
-        background-color: #fff;
-        border-radius: 10px;
-        color: #808B96;
-        margin-left: 0.5rem;
-        border: 2px solid #808B96;
-    }
-    ion-toggle{
-        margin-left: 0.5rem;
+.edit{
+    ion-card{
+        --background: none;
+        background-color: #E1E5EA;
+        ion-card-content{
+            ion-item{
+                --background:none;
+                background-color: #F9F9F9;
+                border-radius: 5px;
+                border: 1px solid #003399;
+                margin-top: 0.5rem;
+                ion-icon{
+                    color: #003399;
+                    margin-right: 1rem;
+                }
+                ion-input{
+                    background-color: #F9F9F9;
+                    color: #003399;
+                }
+            }
+        }
     }
 }

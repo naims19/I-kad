@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+<ion-header class="ion-no-border" mode="ios">
   <ion-toolbar>
     <ion-title>
       I Kad
@@ -8,24 +8,27 @@
 </ion-header>
 <ion-app>
   <ion-content>
-    <div class="text-title">
-      <h1>Portfolio Project 1</h1>
-    </div>
-    <div class="project1">
-      <img src="assets/media/tesla.jpg">
-      <div class="project-desc">
-        <h1>Description</h1>
-        <p><ion-icon slot="start" name="person"></ion-icon> John Doe</p>
-        <p><ion-icon slot="start" name="globe"></ion-icon> www.tesla.com</p>
-        <p><ion-icon slot="start" name="calendar"></ion-icon> 1 March 2020</p>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-        <p>Technology</p>
-        <label>HTML</label><label>CSS</label><label>JQUERY</label><label>AJAX</label>
-        <div class="share">
-          <p>Share <ion-icon slot="end" name="logo-facebook"></ion-icon><ion-icon slot="end" name="logo-instagram"></ion-icon>
-            <ion-icon slot="end" name="logo-twitter"></ion-icon></p>
-        </div>
-      </div>
+    <div class="project">
+      <ion-card>
+        <img src="assets/media/tesla.jpg">
+        <ion-card-header>
+          <ion-card-title>Project 1</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-card-subtitle>Description</ion-card-subtitle>
+         
+          <ion-item lines="none">
+            <ion-icon slot="start" name="globe"></ion-icon><ion-label> www.tesla.com</ion-label>
+          </ion-item>
+          
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+          <ion-card-subtitle class="share">Share</ion-card-subtitle>
+          <ion-item lines="none">
+            <ion-icon slot="start" name="logo-facebook"></ion-icon><ion-icon slot="start" name="logo-instagram"></ion-icon>
+            <ion-icon slot="start" name="logo-twitter"></ion-icon>
+          </ion-item>
+        </ion-card-content>
+      </ion-card>
     </div>
   </ion-content>
 </ion-app>

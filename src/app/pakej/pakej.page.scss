@@ -2,127 +2,108 @@
     font-family: 'Poppins', arial;
 }
 ion-content{
-    --ion-background-color: #0F4CDA;
+    --ion-background-color: #F9F9F9;
+}
+ion-header{
+    ion-toolbar{
+        --background: none;
+        background-color: #003399;
+
+        ion-icon{
+            font-size: 2rem;
+            color: #fff;
+        }
+    }
 }
 .text-title h1{
-    margin-left: 1.5rem;
+    text-align: center;
     margin-top: 4rem;
     font-size: 1.85rem;
     font-weight: 600;
+    color: #003399;
 }
-.pakej1, .pakej2{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3rem;
-    background-color: #17367D;
-    width: 68%;
-    height: 17rem;
-    text-align: center;
-    border-radius: 20%;
-    padding: 1.5rem;
-}
-.pakej-title h2{
-    font-size: 1.35rem;
-}
-.pakej-title h1{
-    font-size: 2.5rem;
-}
-.pakej-title p{
-    font-size: 1.1rem;
-    margin-top: -0.5rem;
-}
-.testimoni-title h1{
-    margin-top: 3rem;
-    margin-left: 1.5rem;
-    font-size: 1.85rem;
-    font-weight: 600;
-}
-.testimoni-desc img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 100%;
-    width: 35%;
-    margin-top: 3rem;
-}
-.testimoni1{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3rem;
-    background-color: #0F4CDA;
-    border-radius: 15%;
-    border: 5px solid #17367D;
-    width: 75%;
-    height: 25rem;
-    margin-top: -4rem;
-    padding-top: 5rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-}
-.testimoni1-desc p{
-    font-size: 1.25rem;
-}
-.name{
-    font-size: 1.3rem;
-}
-.cust-title{
-    font-size: 1rem;
-    margin-top: -1.45rem;
-    color: #9F9F9F;
-}
-.testimoni-btn{
-    text-align: end;
-    margin-right: 3rem;
-    margin-top: 1rem;
-}
-.testimoni-btn ion-icon{
-    font-size: 2.8rem;
-    margin-right: 1rem;
-    border-radius: 100%;
-    background-color: #17367D;
-}
-.client{
-    margin-top: 3rem;
-}
-.client-title, .client-desc{
-    text-align: center;
-}
-.client-title h1{
-    font-size: 1.85rem;
-    font-weight: 600;
-}
-.client-btn ion-icon{
-    margin-top: 3rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    font-size: 2.8rem;
-    border-radius: 100%;
-    background-color: #17367D;
-}
-.client-btn img{
-    width: 100%;
-    object-fit: cover;
-    transform: scale(1.1, 1.1) rotate(1deg);
-    transition: 600ms all ease-in-out;
-}
-ion-card{
-    height: 10rem;
-    width: 100%;
-    background-color: #fff;
-    border: 5px solid #17367D;
-}
-.swiper-slide-active {
-    transform: scale(1.05, 1.05);
+.pakej{
+    ion-card{
+        --background: none;
+        background-color: #003399;
+        text-align: center;
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 18px;
 
-    ion-card {
-        img {
-            transform: scale(1, 1);
+        ion-card-header{
+            ion-card-title{
+                font-size: 1.2rem;
+            }
+        }
+        ion-card-content{
+            ion-card-title{
+                font-size: 1.6rem;
+            }
+            h2{
+                color: #fff;
+            }
+        }
+    }
+}
+.testimoni{
+    ion-slides{
+        ion-slide{
+            border-radius: 10px;
+            ion-card{
+                background-color: #EEEEEE;
+                width: 100%;
+                height: 120px;
+                border: 5px solid #003399;
+
+                ion-card-header{
+                    ion-card-title{
+                        color: #003399;
+                        font-size: 1.25rem;
+                    }
+                }
+                ion-card-content{
+                    ion-card-subtitle{
+                        color: #003399;
+                    }
+                }
+            }
         }
     }
 }
 
-.swiper-slide {
-    transition: 400ms all ease-in-out;
+.testimoni-title h1{
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 1.85rem;
+    font-weight: 600;
+    color: #17367D;
+}
+
+.client{
+    margin-top: 3rem;
+    ion-card{
+        background-color: #003399;
+        width: 100%;
+        height: 130px;
+        ion-card-header{
+            img{
+                width: 35%;
+            }
+        }
+        ion-card-content{
+            ion-card-subtitle{
+                color: #fff;
+                margin-top: -1rem;
+            }
+        }
+    }
+}
+.client-title h1{
+    font-size: 1.85rem;
+    font-weight: 600;
+    color: #17367D;
+    text-align: center;
 }

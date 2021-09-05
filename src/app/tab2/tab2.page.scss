@@ -1,14 +1,20 @@
-ion-toolbar{
+*{
     font-family: 'Poppins', arial;
-    --ion-background-color: #17367D;
 }
 ion-content{
-    --ion-background-color: #0F4CDA;
-    font-family: 'Poppins', arial;
+    --ion-background-color: #F9F9F9;
 }
-ion-fab{
-    margin-right: 0.5rem;
-    margin-top: 2.5rem;
+ion-header{
+    ion-toolbar{
+        --background: none;
+        background-color: #003399;
+
+        ion-menu-buttons{
+            ion-menu-button{
+                color: #fff;
+            }
+        }
+    }
 }
 .text-title span{
     color: #17367D;
@@ -21,12 +27,14 @@ ion-fab{
     margin-top: 4rem;
     font-size: 1.85rem;
     font-weight: 600;
+    color: #003399;
 }
 .text-title p{
     margin-top: 2.5rem;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     font-size: 1.15rem;
+    color: #003399;
 }
 .text-desc{
     margin-top: 2.5rem;
@@ -35,6 +43,7 @@ ion-fab{
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     font-size: 1.15rem;
+    color: #003399;
 }
 .text-desc span{
     color: #17367D;
@@ -45,6 +54,7 @@ ion-fab{
     margin-top: 3rem;
     font-size: 1.85rem;
     font-weight: 600;
+    color: #003399;
 }
 .text-desc2{
     margin-top: 3rem;
@@ -63,10 +73,12 @@ ion-fab{
     margin-right: 1.5rem;
     font-size: 1.35rem;
     font-weight: 600;
+    color: #003399;
 }
 .desc-word{
     margin-top: -1.2rem;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     font-size: 1.15rem;
+    color: #003399;
 }

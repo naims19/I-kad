@@ -1,70 +1,114 @@
 *{
     font-family: 'Poppins', arial;
+}
+ion-content{
+    --ion-background-color: #F9F9F9;
+}
+ion-grid{
     padding: 0;
     margin: 0;
 }
-ion-content{
-    --ion-background-color: #fff;
+.save-btn{
+    ion-item{
+        --background: none;
+        ion-icon{
+            color: #003399;
+            border-radius: 100%;
+            background-color: #fff;
+            width: 8%;
+        }
+        ion-button{
+            background-color: #fff;
+            border-radius: 15px;
+            color: #003399;
+            width: 5rem;
+            font-weight: 600;
+        }
+    }
 }
-h1{
-    color: black;
-}
-.edit-page{
-    height: 100%;
-}
-.edit-title ion-icon{
-    font-size: 2rem;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    border-radius: 100%;
-    border: 2px solid #ABB2B9;
-}
-.edit-title span{
-    float: right;
-    margin-top: 1rem;
-    margin-right: 1rem;
-}
-.edit-title ion-button{
-    width: 100%;
-    background-color: #808B96;
-    color: #fff;
-    border-radius: 10px;
-    border: 2px solid #ABB2B9;
-    transition: 0.3s;
-}
-.edit-title ion-button:hover{
-    background-color: #fff;
-    color: #808B96;
-}
-nav ul{
-    list-style: none;
-    margin-left: 0.5rem;
+.navigation{
     display: flex;
-    justify-content: right;
-}
-nav ul li{
-    margin-top: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-.edit-pages{
-    background: #ABB2B9;
-    height: 100vh;
-}
-.edit-pages ion-button{
-    margin-top: 1rem;
-    margin-left: 0.5rem;
-    --ion-background-color: #fff;
-}
-ion-item{
-    --ion-item-background: #ABB2B9;
-    
+    justify-content: center;
     ion-label{
-        font-family: 'Poppins', arial;
-    }
-    ion-toggle{
-        height: 15px;
-        margin-left: 7rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        font-size: 0.9rem;
+    }   
+}
+.edit{
+    ion-card{
+        --background: none;
+        background-color: #F9F9F9;
+
+        ion-card-title{
+            color: #003399;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
     }
 }
+// .edit-page{
+//     height: 100%;
+// }
+// ion-grid{
+//     margin: 0;
+//     padding: 0;
+// }
+// .edit-title ion-icon{
+//     font-size: 2rem;
+//     margin-top: 1rem;
+//     margin-left: 1rem;
+//     border-radius: 100%;
+//     color: #003399;
+//     background-color: #fff;
+//     border: 2px solid #fff;
+// }
+// .edit-title span{
+//     float: right;
+//     margin-top: 1rem;
+//     margin-right: 1rem;
+// }
+// .edit-title ion-button{
+//     width: 100%;
+//     background-color: #003399;
+//     color: #fff;
+//     border-radius: 10px;
+//     border: 2px solid #fff;
+//     transition: 0.3s;
+// }
+// .edit-title ion-button:hover{
+//     background-color: #fff;
+//     color: #003399;
+// }
+// nav ul{
+//     list-style: none;
+    
+// }
+// nav ul li{
+//     margin-top: 1rem;
+//     text-align: center;
+//     margin: 15px;
+//     letter-spacing: 1px;
+// }
+// .edit-pages{
+//     background: #D8E3E7;
+//     height: 100vh;
+// }
+// .edit-pages ion-button{
+//     margin-top: 1rem;
+//     margin-left: 0.5rem;
+//     --ion-background-color: #fff;
+// }
+// ion-item{
+//     --ion-item-background: #D8E3E7;
+    
+//     ion-label{
+//         font-family: 'Poppins', arial;
+//     }
+//     ion-toggle{
+//         height: 15px;
+//         margin-left: 7rem;
+//     }
+// }
 

@@ -1,24 +1,48 @@
 *{
     font-family: 'Poppins', arial;
 }
+ion-header{
+    ion-toolbar{
+        --background: none;
+        background-color: #003399;
+
+        ion-menu-buttons{
+            ion-menu-button{
+                color: #fff;
+            }
+        }
+    }
+}
 ion-content{
-    --ion-background-color: #0F4CDA;
+    --ion-background-color: #F9F9F9;
+}
+ion-grid{
+    height: 100%;
+    ion-row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
 }
 .title-pic{
-    display: block;
-}
-.title-pic img{
-    display: block;
-    margin-top: 10rem;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 100%;
-    width: 40%;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+        width: 40%;
+    }
 }
 .title-pic h1{
     text-align: center;
     font-size: 2.5rem;
     font-weight: 600;
+    color: #003399;
 }
 .title-pic p{
     text-align: center;
@@ -33,7 +57,7 @@ ion-content{
     color: #fff;
     text-align: end;
     margin-top: 3rem;
-    background-color: #17367D;
+    background-color: #003399;
 }
 ion-chip ion-icon{
     color: #fff;

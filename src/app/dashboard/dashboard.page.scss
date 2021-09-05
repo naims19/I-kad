@@ -1,0 +1,64 @@
+*{
+    font-family: 'Poppins', arial;
+}
+
+ion-content{
+    --ion-background-color: #D8E3E7;
+}
+ion-header{
+    ion-toolbar{
+        --background: none;
+        background-color: #D8E3E7;;
+        height: 120px;
+
+        ion-title{
+            margin-top: 1rem;
+            letter-spacing: 2px;
+            color: #fff;
+        }
+
+        ion-icon{
+            font-size: 2rem;
+            color: #fff;
+        }
+        img{
+            width: 25%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+.header{
+    ion-item{
+        --background: none;
+        ion-label{
+            font-family: 'Poppins';
+            font-size: 1.7rem;
+            font-weight: 600;
+            color: #373A40;
+            letter-spacing: 1px;
+        }
+    }
+}
+.function{
+    ion-card{
+        --background: none;
+        // background-color: #7868E6;
+        ion-card-header{
+            ion-item{
+                --background: none;
+                // background-color: #7868E6;
+                width: 100%;
+
+                ion-icon{
+                    margin-left: 0.5rem;
+                }
+
+                ion-card-title{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}

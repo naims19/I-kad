@@ -9,6 +9,12 @@ export class PakejSetupPage implements OnInit {
   MySelect1: any =[];
   moreIndex1 : any = 1;
 
+  MySelect2: any = [];
+  moreIndex2 : any = 1;
+
+  MySelect3: any = [];
+  moreIndex3 : any = 1;
+
   constructor() { }
 
   ngOnInit() {
@@ -24,4 +30,24 @@ export class PakejSetupPage implements OnInit {
       this.moreIndex1--;
     }
   }
+  addBtn1(val1){
+    if(val1==1){
+      this.MySelect2.push(this.moreIndex2);
+      this.moreIndex2++;
+    }else{
+      this.MySelect2.pop(this.moreIndex2);
+      this.moreIndex2--;
+    }
+  }
+
+  addBtn2(val1){
+    if(val1==1){
+      this.MySelect3.push(this.moreIndex3);
+      this.moreIndex3++;
+    }else{
+      this.MySelect3.pop(this.moreIndex3);
+      this.moreIndex3--;
+    }
+  }
+
 }

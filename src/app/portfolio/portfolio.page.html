@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+<ion-header class="ion-no-border" mode="ios">
   <ion-toolbar>
     <ion-title>
       I Kad
@@ -21,12 +21,20 @@
       <span class="text-project">Project 2</span>
     </div>
     <div class="project1" >
-      <img src="assets/media/tesla.jpg" (click)="showModal()">
-      <h1>Project 1</h1>
+      <ion-card (click)="showModal()">
+        <img src="assets/media/tesla.jpg" >
+        <ion-card-header>  
+          <ion-card-title>Project 1</ion-card-title>
+        </ion-card-header>
+      </ion-card>
     </div>
-    <div class="project2" routerLink="#">
-      <img src="assets/media/amazon.jpg" alt="" srcset="">
-      <h1>Project 2</h1>
+    <div class="project1" >
+      <ion-card>
+        <img src="assets/media/amazon.jpg" alt="" srcset="">
+        <ion-card-header>  
+          <ion-card-title>Project 2</ion-card-title>
+        </ion-card-header>
+      </ion-card>
     </div>
   </ion-content>
 </ion-app>

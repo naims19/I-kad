@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+<ion-header class="ion-no-border" mode="ios">
   <ion-toolbar>
     <ion-title>
       I Kad
@@ -17,27 +17,38 @@
       <h1>Contact</h1>
     </div>
     <div class="contact">
-      <div class="contact-body">
-        <div class="contact-desc">
-          <ion-icon name="location-outline"></ion-icon>
-          <h1>Kajang, Selangor</h1>
-        </div>
-      </div>
-      <div class="contact-body">
-        <div class="contact-desc">
-          <ion-icon name="call-outline"></ion-icon>
-          <h1>013 223 6754</h1>
-        </div>
-      </div>
-      <div class="contact-body">
-        <div class="contact-desc">
-          <ion-icon name="mail-outline"></ion-icon>
-          <h1>john@email.com</h1>
-        </div>
-      </div>
-      <div class="map">
-        <img src="assets/media/map.jpg">
-      </div>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title><ion-icon name="location"></ion-icon></ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-card-subtitle>Kajang, Selangor</ion-card-subtitle>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title><ion-icon name="call"></ion-icon></ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-card-subtitle>013 223 6754</ion-card-subtitle>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title><ion-icon name="mail"></ion-icon></ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-card-subtitle>john@email.com</ion-card-subtitle>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title><ion-icon name="locate"></ion-icon></ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127502.67703176706!2d101.69526176387696!3d2.9701504238705523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdcbc5df56418f%3A0xb186679d7d069c0f!2sKajang%2C%20Selangor!5e0!3m2!1sen!2smy!4v1628149191569!5m2!1sen!2smy" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </ion-card-content>
+      </ion-card>
     </div>
     <div class="text-title">
       <h1>How Can <span class="title-color">We Help You ?</span></h1>
