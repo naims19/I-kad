@@ -2,7 +2,7 @@
   <ion-toolbar>
     <ion-icon name="caret-back-outline" slot="start" style="margin-left: 0.5rem;" routerLink="/dashboard"></ion-icon>
     <ion-title>iKad</ion-title>
-    <ion-icon name="save" slot="end" style="margin-right: 0.5rem;"></ion-icon>
+    <ion-icon name="save" slot="end" style="margin-right: 0.5rem;" (click)="add()"></ion-icon>
   </ion-toolbar>
 </ion-header>
 <ion-content>
@@ -22,19 +22,19 @@
         <div class="edit">
           <ion-card>
             <ion-card-header>
-              <ion-card-title>About Me Page setup</ion-card-title>
+              <ion-card-title>Resume Page setup</ion-card-title>
               <ion-card-subtitle>Add Education</ion-card-subtitle>
             </ion-card-header>
             <ion-card-content>
 
               <ion-item lines="none">
-                <ion-input type="text" placeholder="Year"></ion-input>
+                <ion-input type="text" placeholder="Year" [(ngModel)]="resume.edYear"></ion-input>
               </ion-item>
               <ion-item lines="none">
-                <ion-input type="text" placeholder="Location"></ion-input>
+                <ion-input type="text" placeholder="Location" [(ngModel)]="resume.edLocation"></ion-input>
               </ion-item>
               <ion-item lines="none">
-                <ion-input type="text" placeholder="Title"></ion-input>
+                <ion-input type="text" placeholder="Title" [(ngModel)]="resume.edTitle"></ion-input>
               </ion-item>
               <div class="myrow" *ngFor="let item of MySelect1" style="margin-top: 1.5rem;">
                 <ion-item lines="none">
@@ -54,13 +54,13 @@
               <!-- experience -->
               <ion-card-subtitle>Add Experience</ion-card-subtitle>
               <ion-item lines="none">
-                <ion-input type="text" placeholder="Year"></ion-input>
+                <ion-input type="text" placeholder="Year" [(ngModel)]="resume.expYear"></ion-input>
               </ion-item>
               <ion-item lines="none">
-                <ion-input type="text" placeholder="Location"></ion-input>
+                <ion-input type="text" placeholder="Location" [(ngModel)]="resume.expLocation"></ion-input>
               </ion-item>
               <ion-item lines="none">
-                <ion-input type="text" placeholder="Job Title"></ion-input>
+                <ion-input type="text" placeholder="Job Title" [(ngModel)]="resume.jobTitle"></ion-input>
               </ion-item>
               <div class="experience" *ngFor="let item of MySelect2" style="margin-top: 1.5rem;">
                 <ion-item lines="none">
@@ -80,13 +80,13 @@
               <!-- Skills -->
               <ion-card-subtitle>Add Skills</ion-card-subtitle>
               <ion-item lines="none">
-                <ion-input type="text" placeholder="Head Title"></ion-input>
+                <ion-input type="text" placeholder="Head Title" [(ngModel)]="resume.skillHTitle"></ion-input>
               </ion-item>
               <ion-item lines="none">
-                <ion-input type="text" placeholder="Title"></ion-input>
+                <ion-input type="text" placeholder="Title" [(ngModel)]="resume.skillTitle"></ion-input>
               </ion-item>
               <ion-item lines="none">
-                <ion-input type="text" placeholder="Percentage"></ion-input>
+                <ion-input type="text" placeholder="Percentage" [(ngModel)]="resume.skillPercentage"></ion-input>
               </ion-item>
               <div class="experience" *ngFor="let item of MySelect3" style="margin-top: 1.5rem;">
                 <ion-item lines="none">

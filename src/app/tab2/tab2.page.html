@@ -15,18 +15,16 @@
 
     <div class="text-title">
       <h1>About <span>Me</span></h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <p>{{About?.aboutMe}}</p>
     </div>
 
     <div class="text-desc">
-      <p><span>Age</span> : 22</p>
-      <p><span>Residence</span> : Malaysia</p>
-      <p><span>Address</span> : Kajang, Selangor</p>
-      <p><span>Email</span> : John@gmail.com</p>
-      <p><span>Phone</span> : 015 223 6754</p>
+      <p><span>Age</span> : {{About?.age}}</p>
+      <p><span>Address</span> : {{About?.addr}}</p>
+      <p><span>City</span> : {{About?.city}}</p>
+      <p><span>State</span> : {{About?.state}}</p>
+      <p><span>Email</span> : {{User?.email}}</p>
+      <p><span>Phone</span> : {{Social?.phone}}</p>
     </div>
 
     <div class="text-title2">
@@ -35,11 +33,11 @@
 
     <div class="text-desc2">
       <div class="desc1">
-        <ion-icon name="storefront"></ion-icon>
-        <p class="desc-title">E-Commerce</p>
-        <p class="desc-word">Lorem ipsum dolor sit amet, consectetur.</p>
+        <!-- <ion-icon name="storefront"></ion-icon> -->
+        <p class="desc-title">{{About?.job}}</p>
+        <p class="desc-word">{{About?.jobDesc}}</p>
       </div>
-      <div class="desc2">
+      <!-- <div class="desc2">
         <ion-icon name="code-slash-outline"></ion-icon>
         <p class="desc-title">Web Design</p>
         <p class="desc-word">Lorem ipsum dolor sit amet, consectetur.</p>
@@ -48,7 +46,7 @@
         <ion-icon name="build"></ion-icon>
         <p class="desc-title">Servicing</p>
         <p class="desc-word">Lorem ipsum dolor sit amet, consectetur.</p>
-      </div>
+      </div> -->
     </div>
   </ion-content>
 </ion-app>

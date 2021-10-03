@@ -2,7 +2,7 @@
   <ion-toolbar>
     <ion-icon name="caret-back-outline" slot="start" style="margin-left: 0.5rem;" routerLink="/dashboard"></ion-icon>
     <ion-title>iKad</ion-title>
-    <ion-icon name="save" slot="end" style="margin-right: 0.5rem;"></ion-icon>
+    <ion-icon name="save" slot="end" style="margin-right: 0.5rem;" (click)="add()"></ion-icon>
   </ion-toolbar>
 </ion-header>
 <ion-content>
@@ -24,11 +24,11 @@
         <div class="edit">
           <ion-item lines="none">
             <ion-icon slot="start" name="person"></ion-icon>
-            <ion-input type="text" placeholder="Name"></ion-input>
+            <ion-input type="text" placeholder="Name" [(ngModel)]="profile.fullname"></ion-input>
           </ion-item>
           <ion-item lines="none">
             <ion-icon slot="start" name="briefcase"></ion-icon>
-            <ion-input type="text" placeholder="Job Title"></ion-input>
+            <ion-input type="text" placeholder="Job Title" [(ngModel)]="profile.job"></ion-input>
           </ion-item>
           <ion-item lines="none">
             <ion-icon slot="start" name="person"></ion-icon>

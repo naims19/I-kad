@@ -2,7 +2,7 @@
   <ion-toolbar>
     <ion-icon name="caret-back-outline" slot="start" style="margin-left: 0.5rem;" routerLink="/dashboard"></ion-icon>
     <ion-title>iKad</ion-title>
-    <ion-icon name="save" slot="end" style="margin-right: 0.5rem;"></ion-icon>
+    <ion-icon name="save" slot="end" style="margin-right: 0.5rem;" (click)="add()"></ion-icon>
   </ion-toolbar>
 </ion-header>
 <ion-content>
@@ -26,11 +26,34 @@
             </ion-card-header>
             <ion-card-content>
               <ion-item lines="none">
-                <ion-input type="text" placeholder="Jobs Name"></ion-input>
+                <ion-textarea placeholder="About Me Description" [(ngModel)]="about.aboutMe"></ion-textarea>
               </ion-item>
-              <div class="myrow" *ngFor="let item of MySelect1">
+              <ion-item lines="none">
+                <ion-input type="text" placeholder="Age" [(ngModel)]="about.age"></ion-input>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-input type="text" placeholder="Address" [(ngModel)]="about.addr"></ion-input>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-input type="text" placeholder="City" [(ngModel)]="about.city"></ion-input>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-input type="text" placeholder="State" [(ngModel)]="about.state"></ion-input>
+              </ion-item>
+
+              <ion-card-subtitle>Add Jobs</ion-card-subtitle>
+              <ion-item lines="none">
+                <ion-input type="text" placeholder="Jobs Name" [(ngModel)]="about.job"></ion-input>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-textarea placeholder="Jobs Description" [(ngModel)]="about.jobDesc"></ion-textarea>
+              </ion-item>
+              <div class="myrow" *ngFor="let item of MySelect1" style="margin-top: 1rem;">
                 <ion-item lines="none">
-                  <ion-input type="text" placeholder="Jobs Name"></ion-input>
+                  <ion-input type="text" placeholder="Jobs Name" [(ngModel)]="about.job"></ion-input>
+                </ion-item>
+                <ion-item lines="none">
+                  <ion-textarea placeholder="Jobs Description" [(ngModel)]="about.jobDesc"></ion-textarea>
                 </ion-item>
               </div>
               <ion-button expand="block" fill="clear" class="btn-add" (click)="addBtn(1);">

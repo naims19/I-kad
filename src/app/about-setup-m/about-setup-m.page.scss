@@ -82,6 +82,9 @@ ion-content{
                                 ion-input{
                                     color: #003399;
                                 }
+                                ion-textarea{
+                                    color: #003399;
+                                }
                             }
                             ion-button{
                                 background-color: #003399;
@@ -89,6 +92,12 @@ ion-content{
                                 border-radius: 5px;
                                 margin-top: 1rem;
                                 height: 35px;
+                            }
+                            ion-card-subtitle{
+                                color: #003399;
+                                font-size: 0.9rem;
+                                font-weight: 600;
+                                margin-top: 1rem;
                             }
                         }
                     }

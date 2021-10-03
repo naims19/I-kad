@@ -18,25 +18,38 @@
     <div class="text-desc">
       <h1>Education</h1>
       <ul>
-        <li><p class="desc-title">2020</p>
-            <p class="desc-word">Kolej Vokasional Sepang</p>
-            <p class="desc-word2">Web App Developer</p>
+        <li><p class="desc-title">{{Resume?.edYear}}</p>
+            <p class="desc-word">{{Resume?.edLocation}}</p>
+            <p class="desc-word2">{{Resume?.edTitle}}</p>
         </li>
-        <li><p class="desc-title">2021</p>
+        <!-- <li><p class="desc-title">2021</p>
           <p class="desc-word">Databoost Sdn Bhd</p>
           <p class="desc-word2">Internship</p>
-      </li>
+        </li> -->
+      </ul>
+    </div>
+    <div class="text-desc">
+      <h1>Experiences</h1>
+      <ul>
+        <li><p class="desc-title">{{Resume?.expYear}}</p>
+            <p class="desc-word">{{Resume?.expLocation}}</p>
+            <p class="desc-word2">{{Resume?.jobTitle}}</p>
+        </li>
+        <!-- <li><p class="desc-title">2021</p>
+          <p class="desc-word">Databoost Sdn Bhd</p>
+          <p class="desc-word2">Internship</p>
+        </li> -->
       </ul>
     </div>
     <div class="text-title">
       <h1>Skills</h1>
     </div>
     <div class="text-desc2">
-      <h1>Mobile Programming</h1>
-      <p class="desc-word3">Android</p>
-      <ion-label>95%</ion-label><ion-progress-bar value="0.95" placeholder="95%"></ion-progress-bar>
+      <h1>{{Resume?.skillHTitle}}</h1>
+      <p class="desc-word3">{{Resume?.skillTitle}}</p>
+      <ion-label>{{Resume?.skillPercentage}}%</ion-label><ion-progress-bar value="{{Resume?.skillPercentages}}" placeholder="95%"></ion-progress-bar>
     </div>
-    <div class="text-desc2">
+    <!-- <div class="text-desc2">
       <h1>FrameWork</h1>
       <p class="desc-word3">Ionic</p>
       <ion-label>85%</ion-label><ion-progress-bar value="0.85"></ion-progress-bar>
@@ -45,7 +58,7 @@
       <h1>Microsoft Office Tools</h1>
       <p class="desc-word3">Ms Word, Powerpoint & Excel</p>
       <ion-label>97%</ion-label><ion-progress-bar value="0.97"><p>97%</p></ion-progress-bar>
-    </div>
+    </div> -->
     <br>
   </ion-content>
 </ion-app>

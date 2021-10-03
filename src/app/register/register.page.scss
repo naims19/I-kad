@@ -73,3 +73,10 @@ ion-content{
         }
     }
 }
+.error-message{
+    color: var(--ion-color-danger);
+    text-align: center;
+}
+.error p{
+    color: var(--ion-color-danger);
+}

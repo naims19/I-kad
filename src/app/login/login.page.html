@@ -5,17 +5,34 @@
     <h3>Internet Kad, Go Online</h3>
   </div>
   <div class="login-form">
-    <ion-item lines="none">
-      <ion-icon name="mail"></ion-icon>
-      <ion-input type="text" placeholder="Email"></ion-input>
-    </ion-item>
-    <ion-item lines="none">
-      <ion-icon name="key"></ion-icon>
-      <ion-input type="password" placeholder="Password"></ion-input>
-    </ion-item>
-    <ion-button expand="block" fill="clear" routerLink="/dashboard">
-      Login
-    </ion-button>
+    <form [formGroup]="validationFormUser" (ngSubmit)="LoginUser(validationFormUser.value)">
+      <ion-item lines="none">
+        <ion-icon name="mail"></ion-icon>
+        <ion-input type="text" placeholder="Email" formControlName="email" name="email"></ion-input>
+      </ion-item>
+      <div *ngFor="let validation of ValidationUserMessages.email">
+        <ng-container *ngIf="validationFormUser.get('email').hasError(validation.type) && 
+        (validationFormUser.get('email').dirty || validationFormUser.get('email'). touched)">
+          <small class="error-message">{{validation.message}}</small>
+        </ng-container>
+      </div>
+
+      <ion-item lines="none">
+        <ion-icon name="key"></ion-icon>
+        <ion-input type="password" placeholder="Password" formControlName="password" name="password"></ion-input>
+      </ion-item>
+      <div *ngFor="let validation of ValidationUserMessages.password">
+        <ng-container *ngIf="validationFormUser.get('password').hasError(validation.type) && 
+        (validationFormUser.get('password').dirty || validationFormUser.get('password'). touched)">
+          <small class="error-message">{{validation.message}}</small>
+        </ng-container>
+      </div>
+
+      <ion-button expand="block" fill="clear" type="submit" [disabled]="!validationFormUser.valid">
+        Login
+      </ion-button>
+    </form>
+    
     <p routerLink="/signup"><ion-icon name="chevron-back-outline"></ion-icon>Back</p>
   </div>
 </ion-content>
